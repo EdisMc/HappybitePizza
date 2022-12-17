@@ -8,18 +8,22 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
 
-  constructor(private fireauth: AngularFireAuth, private router: Router) {
+  loggedIn : boolean = false;
+
+  constructor(public fireauth: AngularFireAuth, public router: Router) {
   }
 
-  // login 
   login(email: string, password: string) {
     this.fireauth.signInWithEmailAndPassword(email, password).then( res => {
       localStorage.setItem('token', 'true');
 
       if (res.user?.emailVerified == true) {
+        this.loggedIn = true;
         this.router.navigate(['/dashboard']);
+        return true;
       } else {
         this.router.navigate(['/verify-email']);
+        return false;
       }
 
     }, err => {
@@ -28,7 +32,6 @@ export class AuthService {
     })
   }
 
-  // register
   register(email: string, password: string) {
     this.fireauth.createUserWithEmailAndPassword(email, password).then(res => {
       alert('Registration Successful!');
@@ -40,17 +43,20 @@ export class AuthService {
     })
   }
 
-  // sign out
   logout() {
     this.fireauth.signOut().then(() => {
       localStorage.removeItem('token');
-      this.router.navigate(['/login']);
+      this.loggedIn = false;
+      this.router.navigate(['/home']);
     }, err => {
       alert(err.message);
     })
   }
 
-  // forgot password
+  isAuthenticated() {
+    return this.loggedIn;
+  }
+
   forgotPassword(email: string) {
     this.fireauth.sendPasswordResetEmail(email).then(() => {
       this.router.navigate(['/verify-email']);
@@ -59,7 +65,6 @@ export class AuthService {
     })
   }
 
-  // email verification
   sendEmailForVarification(user: any) {
     console.log(user);
     user.sendEmailVerification().then((res: any) => {
@@ -69,7 +74,6 @@ export class AuthService {
     })
   }
 
-  //sign in with google
   googleSignIn() {
     return this.fireauth.signInWithPopup(new GoogleAuthProvider).then(res => {
 

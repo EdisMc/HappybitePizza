@@ -17,3 +17,12 @@ form {
 mb-3 {
     text-shadow: 5px 5px 10px black;
 }
+
+.font-poppins {
+    font-family: 'Concert One', sans-serif;
+    color: #c1b146;
+  }
+  
+  .font-poppins:hover {
+    color: #d7ba2b;
+  }

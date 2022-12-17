@@ -17,8 +17,6 @@ export class DashboardComponent implements OnInit {
 
   }
 
-  register() {
-    this.auth.logout();
-  }
+
 
 }

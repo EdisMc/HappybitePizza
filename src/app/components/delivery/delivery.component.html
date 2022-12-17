@@ -31,8 +31,9 @@
                                             <label for="fname">First Name</label>
                                             <input type="text" class="form-control" id="fname" formControlName="fname"
                                                 name="fname">
-                                            <mat-error *ngIf="fname.touched && fname.invalid">Please enter a name!
-                                            </mat-error>
+                                                <span class="invalidField"
+                                                *ngIf="fname.touched && fname.invalid">Please enter your
+                                                first name!</span>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
@@ -40,8 +41,9 @@
                                             <label for="last_name">Last Name</label>
                                             <input type="text" class="form-control" id="last_name"
                                                 formControlName="lname" placeholder="">
-                                            <mat-error *ngIf="lname.touched && lname.invalid">Please enter a name!
-                                            </mat-error>
+                                                <span class="invalidField"
+                                                *ngIf="lname.touched && lname.invalid">Please enter your
+                                                last name!</span>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
@@ -55,8 +57,9 @@
                                         <div class="form-group mb-4">
                                             <label for="town">Town / City </label>
                                             <input type="text" class="form-control" id="town" formControlName="town">
-                                            <mat-error *ngIf="town.touched && town.invalid">Please enter a city!
-                                            </mat-error>
+                                            <span class="invalidField"
+                                                *ngIf="town.touched && town.invalid">Please enter a
+                                                town!</span>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
@@ -68,8 +71,9 @@
                                                 <option class="fontSelect" *ngFor="let district of districts"
                                                     [ngValue]="district">{{district}}</option>
                                             </select>
-                                            <mat-error *ngIf="district.touched && district.invalid">Please select a
-                                                district!</mat-error>
+                                            <span class="invalidField"
+                                                *ngIf="district.touched && district.invalid">Please select a
+                                                district!</span>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
@@ -77,8 +81,8 @@
                                             <label for="street">Street Address</label>
                                             <input type="text" class="form-control" id="street" formControlName="street"
                                                 placeholder="">
-                                            <mat-error *ngIf="street.touched && street.invalid">Please enter an address!
-                                            </mat-error>
+                                                <span class="invalidField"
+                                                *ngIf="street.touched && street.invalid">Please enter street!</span>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
@@ -86,8 +90,9 @@
                                             <label for="apartment">Apartment, suite, unit etc.</label>
                                             <input type="text" class="form-control" formControlName="apartment"
                                                 id="apartment">
-                                            <mat-error *ngIf="apartment.touched && apartment.invalid">Please enter an
-                                                address!</mat-error>
+                                                <span class="invalidField"
+                                                *ngIf="apartment.touched && apartment.invalid">Please enter an
+                                                address!</span>
                                         </div>
                                     </div>
 
@@ -96,8 +101,8 @@
                                             <label for="postcode">Postcode / ZIP</label>
                                             <input type="text" class="form-control" id="postcode"
                                                 formControlName="postcode" placeholder="">
-                                            <mat-error *ngIf="postcode.touched && postcode.invalid">Please enter a
-                                                postcode!</mat-error>
+                                                <span class="invalidField"
+                                                *ngIf="postcode.touched && postcode.invalid">Please enter a postcode/ZIP!</span>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
@@ -105,8 +110,9 @@
                                             <label for="phone">Phone </label>
                                             <input type="text" class="form-control" id="phone" formControlName="phone"
                                                 placeholder="">
-                                            <mat-error *ngIf="phone.touched && phone.invalid">Please enter a phone!
-                                            </mat-error>
+                                                <span class="invalidField"
+                                                *ngIf="phone.touched && phone.invalid">Please enter a
+                                                phone!</span>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
@@ -114,8 +120,9 @@
                                             <label for="email">Email address </label>
                                             <input type="text" class="form-control" id="email" formControlName="email"
                                                 placeholder="">
-                                            <mat-error *ngIf="email.touched && email.invalid">Please enter an email!
-                                            </mat-error>
+                                                <span class="invalidField"
+                                                *ngIf="email.touched && email.invalid">Please enter an
+                                                email!</span>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
@@ -202,8 +209,9 @@
                                             <label class="fontChildren" for="cardnumber">Card Number</label>
                                             <input type="text" class="form-control" id="cardnumber" name="cardnumber"
                                                 placeholder="" formControlName="cardnumber">
-                                            <mat-error *ngIf="cardnumber.touched && cardnumber.invalid">Please enter a
-                                                card number!</mat-error>
+                                            <span class="invalidField"
+                                                *ngIf="cardnumber.touched && cardnumber.invalid">Please enter your
+                                                name!</span>
                                         </div>
                                     </div>
                                     <div>
@@ -211,8 +219,9 @@
                                             <label class="fontChildren" for="cardholder">Cardholder's Name</label>
                                             <input type="text" class="form-control" id="cardholder" placeholder=""
                                                 formControlName="cardholder">
-                                            <mat-error *ngIf="cardholder.touched && cardholder.invalid">Please enter a
-                                                cardholder's name!</mat-error>
+                                                <span class="invalidField"
+                                                *ngIf="cardholder.touched && cardholder.invalid">Please enter the cardholder
+                                                name!</span>
                                         </div>
                                     </div>
                                     <div>
@@ -220,8 +229,9 @@
                                             <label class="fontChildren" for="expiryMonth">Expiry Month</label>
                                             <input type="text" class="form-control" id="expiryMonth" placeholder=""
                                                 formControlName="expirymonth">
-                                            <mat-error *ngIf="expirymonth.touched && expirymonth.invalid">Please enter
-                                                an expiry month!</mat-error>
+                                                <span class="invalidField"
+                                                *ngIf="expirymonth.touched && expirymonth.invalid">Please enter an expiry month!
+                                                </span>
                                         </div>
                                     </div>
                                     <div>
@@ -229,8 +239,8 @@
                                             <label class="fontChildren" for="expiryYear">Expiry Year</label>
                                             <input type="text" class="form-control" id="expiryYear" placeholder=""
                                                 formControlName="expiryyear">
-                                            <mat-error *ngIf="expiryyear.touched && expiryyear.invalid">Please enter an
-                                                expiry year!</mat-error>
+                                                <span class="invalidField"
+                                                *ngIf="expiryyear.touched && expiryyear.invalid">Please enter an expiry year!</span>
                                         </div>
                                     </div>
                                     <div>
@@ -238,8 +248,9 @@
                                             <label class="fontChildren" for="securityCode">Security Code</label>
                                             <input type="text" class="form-control" id="securityCode" placeholder=""
                                                 formControlName="securitycode">
-                                            <mat-error *ngIf="securitycode.touched && securitycode.invalid">Please enter
-                                                a security code!</mat-error>
+                                                <span class="invalidField"
+                                                *ngIf="securitycode.touched && securitycode.invalid">Please enter a security code!
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
@@ -258,8 +269,9 @@
                                             formControlName="tandc" #agree>
                                         <label class="form-check-label" for="tandc">I have read and agree to the
                                             website <a href="https://shortly.bg/asYhG">terms and conditions </a></label>
-                                        <mat-error *ngIf="!agree.checked && tandc.touched">Please aggree to our terms
-                                            and conditions!</mat-error>
+                                            <span class="invalidField"
+                                                *ngIf="tandc.touched && tandc.invalid">Please agree to our terms and conditions!
+                                            </span>
                                     </div>
                                 </div>
                                 <div class="text-center">

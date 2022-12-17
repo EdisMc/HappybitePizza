@@ -2,7 +2,6 @@
     background: url("../../../assets/pic/46.jpg");
   
     width: 100%;
-    /* height: 130vh; */
   
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -38,26 +37,6 @@
     text-shadow: 5px 5px 10px black;
   }
   
-  /*
-  .header {
-    width: 100%;
-    height: 100vh;
-    background-image: url("../../../assets/pic/46.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    position: relative;
-    background-attachment: fixed;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-family: 'Pacifico', cursive;
-    color: #ffffff;
-    font-weight: bolder;
-    text-shadow: 5px 5px 10px black;
-    font-size: larger;
-  } */
-  
-  
-  /* form */
   
   .form-content label,
   .was-validated .form-check-input:invalid~.form-check-label,
@@ -97,11 +76,11 @@
   
   .font-poppins {
     font-family: 'Concert One', sans-serif;
-    color: #26a15c;
+    color: #c1b146;
   }
   
   .font-poppins:hover {
-    color: #06642d;
+    color: #d7ba2b;
   }
   
   .invalidField{

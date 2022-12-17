@@ -14,12 +14,15 @@ import { SaladsComponent } from './components/salads/salads.component';
 import { DessertsComponent } from './components/desserts/desserts.component';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
+import { LogoutComponent } from './components/logout/logout.component';
+import { UserGuardService } from './services/guard/user-guard.service';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
   { path: "home", component: HomeComponent },
   { path: 'login', component : LoginComponent },
-  { path: 'dashboard', component : DashboardComponent },
+  { path: 'logout', component : LogoutComponent },
+  { path: 'dashboard', component : DashboardComponent, canActivate: [UserGuardService] },
   { path: 'register', component : RegisterComponent },
   { path: 'verify-email', component : VerifyEmailComponent },
   { path: 'forgot-password', component : ForgotPasswordComponent },

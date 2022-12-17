@@ -27,26 +27,50 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngbCollapse]="isCollapsed">
+
       <ul class="navbar-nav ml-auto">
         <li class="nav-item"><a class="nav-link" [routerLink]="['/about-us']" routerLinkActive="router-link-active"
             id="aboutUs">About Us</a></li>
         <li class="nav-item"><a class="nav-link" [routerLink]="['/menu']" routerLinkActive="router-link-active"
             id="menu">Menu</a></li>
         <li class="nav-item"><a class="nav-link" [routerLink]="['/delivery']" routerLinkActive="router-link-active"
-            title="Delivery" id="reservation">Delivery</a>
+            title="Delivery" id="delivery">Delivery</a>
         </li>
         <li class="nav-item"><a class="nav-link" [routerLink]="['/reservation']" routerLinkActive="router-link-active"
             title="Make a reservation" id="reservation">Reservation</a>
-        </li>
         <li class="nav-item"><a class="nav-link" [routerLink]="['/register']" routerLinkActive="router-link-active"
             title="Registration" id="reservation">Register</a>
         </li>
         <li class="nav-item"><a class="nav-link" [routerLink]="['/login']" routerLinkActive="router-link-active"
-            title="Login" id="reservation">Login</a>
+            title="Login" id="login">Login</a>
         </li>
+
+          <li (click)="logout()"><a>Logout</a></li>
+
+
       </ul>
+
+      <!-- <div class="main-container">
+        <div class="nav-container">
+          <ul>
+            <li [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}"><a routerLink="">Home</a></li>
+            <li [routerLinkActive]="'active'"><a [routerLink]="'about-us'">About</a></li>
+            <li [routerLinkActive]="'active'"><a [routerLink]="['menu']">Menu</a></li>
+            <li [routerLinkActive]="'active'"><a [routerLink]="['delivery']">Delivery</a></li>
+            <li [routerLinkActive]="'active'"><a [routerLink]="['reservation']">Reservation</a></li>
+            <li [routerLinkActive]="'active'"><a [routerLink]="['register']">Register</a></li>
+            <li [routerLinkActive]="'active'"><a [routerLink]="['login']">Login</a></li>
+
+            <span style="float: center">
+              <li (click)="logout()"><a>Logout</a></li>
+            </span>
+          </ul>
+        </div>
+      </div> -->
+
     </div>
   </nav>
+
 
   <footer>
     <div class="scrolltop float-right">
@@ -56,4 +80,59 @@
 
 </body>
 
-</html>
+<!-- <div class="mini-navbar-wrap">
+
+  <ng-template #loggedOutTemplate>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark bb" id="xy">
+      <div>
+        <a [routerLink]="['/home']" routerLinkActive="router-link-active"><img
+            src="assets/Screenshot-(741)-transformed.png" alt="Pizza Logo" class="ml-lg-5 mb-1" width="120"
+            height="auto"></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" (click)="isCollapsed = !isCollapsed"
+        [attr.aria-expanded]="!isCollapsed" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngbCollapse]="isCollapsed">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" [routerLink]="['/about-us']" routerLinkActive="router-link-active"
+              id="aboutUs">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" [routerLink]="['/register']" routerLinkActive="router-link-active"
+              title="Registration" id="reservation">Register</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" [routerLink]="['/login']" routerLinkActive="router-link-active"
+              title="Login" id="reservation">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </ng-template>
+  <ng-template #loggedInTemplate>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark bb" id="ay">
+
+      <div class="navbar navbar expend">
+        <ul class="navbar-nav ml-auto">
+          <li>
+            <a routerLink="/auth/profile">{{user?.email}}'s profile</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" [routerLink]="['/about-us']" routerLinkActive="router-link-active"
+              id="aboutUs">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" [routerLink]="['/menu']" routerLinkActive="router-link-active"
+              id="menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" [routerLink]="['/delivery']" routerLinkActive="router-link-active"
+              title="Delivery" id="delivery">Delivery</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" [routerLink]="['/reservation']" routerLinkActive="router-link-active"
+              title="Make a reservation" id="reservation">Reservation</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" [routerLink]="['/logout']" routerLinkActive="router-link-active"
+              id="logout">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+  </ng-template>
+
+
+  <ng-container *ngTemplateOutlet="isLoggedIn ? loggedInTemplate : loggedOutTemplate"></ng-container> -->

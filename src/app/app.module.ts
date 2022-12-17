@@ -34,6 +34,12 @@ import { RegisterComponent } from './components/register/register.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
+import { UserComponent } from './components/user/user.component';
+import { LogoutComponent } from './components/logout/logout.component';
+import { UserGuardService } from './services/guard/user-guard.service';
+import { AuthService } from './services/auth.service';
+
+
 
 @NgModule({
   declarations: [
@@ -54,6 +60,8 @@ import { VerifyEmailComponent } from './components/verify-email/verify-email.com
     DashboardComponent,
     ForgotPasswordComponent,
     VerifyEmailComponent,
+    UserComponent,
+    LogoutComponent,
   ],
   imports: [
     BrowserModule,
@@ -75,7 +83,7 @@ import { VerifyEmailComponent } from './components/verify-email/verify-email.com
     provideDatabase(() => getDatabase()),
     provideFirestore(() => getFirestore()),
   ],
-  providers: [],
+  providers: [UserGuardService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
