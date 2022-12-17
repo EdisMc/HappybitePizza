@@ -1,0 +1,19 @@
+.header {
+    background-image: url("../../../assets/pic/pngtree-pizza-cartoon-simple-background-picture-image_1283033.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    background-attachment: fixed;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    font-size: larger;
+}
+
+form {
+    background-color: rgb(240, 240, 240);
+}
+
+mb-3 {
+    text-shadow: 5px 5px 10px black;
+}

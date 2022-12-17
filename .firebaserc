@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "happybitepizzeria": {
+      "hosting": {
+        "HappybitePizza": [
+          "happybitepizzeria"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "happybitepizzeria"
+  }
+}

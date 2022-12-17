@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AngularFireModule } from '@angular/fire/compat'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
@@ -23,6 +24,16 @@ import { FamousComponent } from './components/famous/famous.component';
 import { RateDialog } from './dialogs/rate-dialog.component';
 import { OffersComponent } from './components/offers/offers.component';
 import { ReservationComponent } from './components/reservation/reservation.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
+import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +49,11 @@ import { ReservationComponent } from './components/reservation/reservation.compo
     DessertsComponent,
     FamousComponent,
     OffersComponent,
+    LoginComponent,
+    RegisterComponent,
+    DashboardComponent,
+    ForgotPasswordComponent,
+    VerifyEmailComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,6 +69,11 @@ import { ReservationComponent } from './components/reservation/reservation.compo
     MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideDatabase(() => getDatabase()),
+    provideFirestore(() => getFirestore()),
   ],
   providers: [],
   bootstrap: [AppComponent]

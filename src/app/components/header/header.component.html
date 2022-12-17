@@ -17,8 +17,9 @@
 <body>
   <nav class="navbar navbar-expand-lg bg-dark navbar-dark bb" id="xy">
     <div>
-      <a [routerLink]="['/home']" routerLinkActive="router-link-active"><img src="assets/Screenshot-(741)-transformed.png"
-          alt="Pizza Logo" class="ml-lg-5 mb-1" width="120" height="auto"></a>
+      <a [routerLink]="['/home']" routerLinkActive="router-link-active"><img
+          src="assets/Screenshot-(741)-transformed.png" alt="Pizza Logo" class="ml-lg-5 mb-1" width="120"
+          height="auto"></a>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" (click)="isCollapsed = !isCollapsed"
       [attr.aria-expanded]="!isCollapsed" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -31,23 +32,18 @@
             id="aboutUs">About Us</a></li>
         <li class="nav-item"><a class="nav-link" [routerLink]="['/menu']" routerLinkActive="router-link-active"
             id="menu">Menu</a></li>
-        <!-- <li class="nav-item"><a class="nav-link" [routerLink]="['/famous-pizza']" routerLinkActive="router-link-active"
-            id="famousPizza">Famous Pizza</a></li> -->
-        <!-- <li class="nav-item"><a class="nav-link" [routerLink]="['/offers']" routerLinkActive="router-link-active"
-            id="offers">Offers</a>
-        </li> -->
         <li class="nav-item"><a class="nav-link" [routerLink]="['/delivery']" routerLinkActive="router-link-active"
             title="Delivery" id="reservation">Delivery</a>
         </li>
-        <!-- <li class="nav-item"><a class="nav-link" [routerLink]="['/delivery']" routerLinkActive="router-link-active"
-            title="Delivery" id="reservation"><i class="fa fa-cart-plus" style="font-size:30px"></i></a>
-        </li> -->
         <li class="nav-item"><a class="nav-link" [routerLink]="['/reservation']" routerLinkActive="router-link-active"
             title="Make a reservation" id="reservation">Reservation</a>
         </li>
-        <!-- <li class="nav-item"><a class="nav-link" [routerLink]="['/reservation']" routerLinkActive="router-link-active"
-            title="Make a reservation" id="reservation"><i class="fa fa-cutlery" style="font-size:30px"></i></a>
-        </li> -->
+        <li class="nav-item"><a class="nav-link" [routerLink]="['/register']" routerLinkActive="router-link-active"
+            title="Registration" id="reservation">Register</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" [routerLink]="['/login']" routerLinkActive="router-link-active"
+            title="Login" id="reservation">Login</a>
+        </li>
       </ul>
     </div>
   </nav>

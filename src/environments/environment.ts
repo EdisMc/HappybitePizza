@@ -3,6 +3,14 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  firebase: {
+    projectId: 'happybitepizzeria',
+    appId: '1:915870787475:web:c1b2e082843b61e0696a66',
+    storageBucket: 'happybitepizzeria.appspot.com',
+    apiKey: 'AIzaSyDKq_Fxa9iuuWdl7OQHPcLAYcyi9pDv9A8',
+    authDomain: 'happybitepizzeria.firebaseapp.com',
+    messagingSenderId: '915870787475',
+  },
   production: false
 };
 
