@@ -1,10 +1,17 @@
-# HappybitePizza
+# HappyBitePizzeria
 
 ![project](https://user-images.githubusercontent.com/92871901/208291849-f7c816fe-1f5f-48e0-bf20-6e085a77b8ec.png)
 
-_HappyBite Pizzeria app is made for educational purpose, created with Angular for the client-side, Firebase service for the back-end and database._
+HappyBite Pizzeria app is made for educational purpose(Angular Project Assignment in Softuni).
+It's created with Angular for the client-side and Firebase for the back-end and as a database.
 
 ## General information
+
+HappyBite Pizzeria app is made for educational purpose, created with Angular for the client-side, Firebase service for the back-end and database.
+
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 -The main purpose of the app is to let the user make a delivery from the restaurant or make a reservation in it;
 -Guests are only able to see the Home Page, About Us page and they can register and login after successful register;
