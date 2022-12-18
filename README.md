@@ -1,6 +1,6 @@
 # HappybitePizza
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+HappyBite Pizzeria app is made for educational purpose, created with Angular for the client-side, Firebase service for the back-end and database.
 
 ## Development server
 
