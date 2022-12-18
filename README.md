@@ -1,8 +1,9 @@
-HappyBitePizzeria
+##HappyBitePizzeria
 
 ![project](https://user-images.githubusercontent.com/92871901/208291849-f7c816fe-1f5f-48e0-bf20-6e085a77b8ec.png)
 
-HappyBite Pizzeria app is made for educational purpose, created with Angular for the client-side, Firebase service for the back-end and database.
+HappyBite Pizzeria app is made for educational purpose(Angular Project Assignment in Softuni).
+It's created with Angular for the client-side and Firebase for the back-end and as a database.
 
 ## Development server
 
