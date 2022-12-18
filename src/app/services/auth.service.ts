@@ -57,6 +57,23 @@ export class AuthService {
     return this.loggedIn;
   }
 
+  aboutUs() {
+    this.loggedIn = false;
+  }
+
+  menu() {
+    this.loggedIn = true;
+  }
+
+  delivery() {
+    this.loggedIn = true;
+  }
+
+  reservation() {
+    this.loggedIn = false;
+  }
+
+
   forgotPassword(email: string) {
     this.fireauth.sendPasswordResetEmail(email).then(() => {
       this.router.navigate(['/verify-email']);

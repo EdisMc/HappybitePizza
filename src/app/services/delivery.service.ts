@@ -4,7 +4,8 @@ import { DeliveryModel } from '../models/delivery.model';
 import { catchError } from "rxjs/operators";
 
 
-const url: string = "https://kek-s-pizzeria-default-rtdb.firebaseio.com/orders.json";
+const url: string = "https://happybitepizzeria-default-rtdb.firebaseio.com/orders.json";
+
 
 @Injectable({
     providedIn: "root",

@@ -3,7 +3,7 @@ import {HttpClient} from "@angular/common/http";
 import {ReservationModel} from "../models/reservation.model";
 import {catchError} from "rxjs/operators";
 
-const url: string = "https://kek-s-pizzeria-default-rtdb.firebaseio.com/reservations.json";
+const url: string = "https://happybitepizzeria-default-rtdb.firebaseio.com/reservations.json";
 
 @Injectable({providedIn: 'root'})
 export class ReservationService {

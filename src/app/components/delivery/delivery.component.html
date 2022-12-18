@@ -176,17 +176,17 @@
                                             <span class="h5" *ngIf="sum < 50">$4.99</span>
                                             <span class="h5" *ngIf="sum > 50">Free</span>
                                         </li>
-                                        <li class="d-flex justify-content-between" *ngIf="values==='KEK'">
+                                        <li class="d-flex justify-content-between" *ngIf="values==='HAPPY'">
                                             <span>Discount from coupon:</span>
                                             <span class="h5">$10.00</span>
                                         </li>
-                                        <li class="d-flex justify-content-between" *ngIf="values==='KEK'">
+                                        <li class="d-flex justify-content-between" *ngIf="values==='HAPPY'">
                                             <span>Total:</span>
                                             <span class="h5" *ngIf="sum === 0">$0</span>
                                             <span class="h5" *ngIf="sum < 50 && sum > 0">${{total - 10}}</span>
                                             <span class="h5" *ngIf="sum > 50">${{sum - 10}}</span>
                                         </li>
-                                        <li class="d-flex justify-content-between" *ngIf="values !=='KEK'">
+                                        <li class="d-flex justify-content-between" *ngIf="values !=='HAPPY'">
                                             <span>Total</span>
                                             <span class="h5" *ngIf="sum === 0">$0</span>
                                             <span class="h5" *ngIf="sum < 50 && sum > 0">${{total}}</span>

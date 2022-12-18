@@ -29,7 +29,7 @@ const routes: Routes = [
   { path: "famous-pizza", component: FamousComponent },
   { path: "offers", component: OffersComponent },
   { path: "about-us", component: AboutUsComponent },
-  { path: "delivery", component: DeliveryComponent },
+  { path: "delivery", component: DeliveryComponent, canActivate: [UserGuardService] },
   { path: "reservation", component: ReservationComponent },
   { path: "menu", component: MenuComponent },
   { path: "salads", component: SaladsComponent },
