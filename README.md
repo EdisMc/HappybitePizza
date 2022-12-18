@@ -16,14 +16,13 @@ but not register and login pages;
 
 ## Technologies
 
-    Client
         Angular CLI: 15.0.1,
         Angular Material,
         TypeScript: 4.8.2
-
-    Server
         Node: 18.12.0,
-        Firebase
+        Firebase,
+        REST API,
+        HttpClient
 
 ## Setup
 ```
