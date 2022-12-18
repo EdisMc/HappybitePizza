@@ -18,6 +18,7 @@ but not register and login pages;
 
         Angular CLI: 15.0.1,
         Angular Material,
+        Bootstrap,
         TypeScript: 4.8.2
         Node: 18.12.0,
         Firebase,
