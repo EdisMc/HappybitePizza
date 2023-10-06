@@ -7,12 +7,6 @@ It's created with Angular for the client-side and Firebase for the back-end and 
 
 ## General information
 
-HappyBite Pizzeria app is made for educational purpose, created with Angular for the client-side, Firebase service for the back-end and database.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
 -The main purpose of the app is to let the user make a delivery from the restaurant or make a reservation in it;
 -Guests are only able to see the Home Page, About Us page and they can register and login after successful register;
 -Logged in users have access to Menu, Delivery and Reservation pages, as well as to the About Us and Logout pages, 
@@ -22,14 +16,14 @@ but not register and login pages;
 
 ## Technologies
 
-    Client
         Angular CLI: 15.0.1,
         Angular Material,
+        Bootstrap,
         TypeScript: 4.8.2
-
-    Server
         Node: 18.12.0,
-        Firebase
+        Firebase,
+        REST API,
+        HttpClient
 
 ## Setup
 ```
@@ -42,6 +36,3 @@ $ ng serve
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. 
 The application will automatically reload if you change any of the source files.
 
-## Hosting
-
-The application is currently deployed in Github Pages.
